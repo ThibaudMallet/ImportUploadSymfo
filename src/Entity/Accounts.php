@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\AccountsRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: AccountsRepository::class)]
 class Accounts
@@ -47,4 +48,5 @@ class Accounts
 
         return $this;
     }
+
 }
